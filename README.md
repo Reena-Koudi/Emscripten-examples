@@ -2,24 +2,24 @@
 
 The core Emscripten SDK (emsdk) driver is a Python script. You can get it for the first time with
 
-# Get the emsdk repo
+#### Get the emsdk repo
 git clone https://github.com/juj/emsdk.git
 
-# Enter that directory
+#### Enter that directory
 cd emsdk
 
 Run the following emsdk commands to get the latest tools from GitHub and set them as active:
 
-# Fetch the latest registry of available tools.
+#### Fetch the latest registry of available tools.
 ./emsdk update
 
-# Download and install the latest SDK tools.
+#### Download and install the latest SDK tools.
 ./emsdk install latest
 
-# Make the "latest" SDK "active" for the current user. (writes ~/.emscripten file)
+#### Make the "latest" SDK "active" for the current user. (writes ~/.emscripten file)
 ./emsdk activate latest
 
-# Activate PATH and other environment variables in the current terminal
+#### Activate PATH and other environment variables in the current terminal
 source ./emsdk_env.sh
 
 NOTE: On Windows, run emsdk instead of ./emsdk, and emsdk_env.bat instead of source ./emsdk_env.sh
@@ -31,10 +31,10 @@ for example <emsdk root directory>/emscripten/1.20.0/.
   
  emsdk/emscripten/1.38.9
  
- # Verifying Emscripten
+ #### Verifying Emscripten
  $ ./emcc -v
  
- # Running Emscripten  
+ #### Running Emscripten  
  You can now compile your first C/C++ file to JavaScript.
  Specify the C/C++ file after emcc 
  
