@@ -51,6 +51,19 @@ for example <emsdk root directory>/emscripten/1.20.0/.
  $ node a.out.js
  
  This prints “hello, world!” to the console, as expected.
+ 
+ ## hello-world example
+ Create hello.c file
+ 
+ Compile it with:
+ emcc hello.c -o hello.html -s WASM=1
+ 
+ We use the option -o to generate the html and -s WASM to generate wasm binary file.
+ 
+ ##### execute this on the hello.html path
+ python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()'
+ 
+ Now you can go to your browser port 8000.
 
 
 
