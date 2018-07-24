@@ -45,6 +45,8 @@ for example <emsdk root directory>/emscripten/1.20.0/.
  a.out.wasm -> WebAssembly file containing the compiled code
  a.out.js   -> JavaScript file containing the runtime support to load and execute it
  
+ ###### NOTE: WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a  portable target for compilation of high-level languages like C/C++/Rust, enabling deployment on the web for client and server applications.
+ 
  You can run them using node.js:
  $ node a.out.js
  
